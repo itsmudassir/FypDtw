@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/abc">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSeries"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Answer:?" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="30dp"
+        android:text="..." />
+
+    <Button
+        android:id="@+id/btnSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="33dp"
+        android:layout_toLeftOf="@+id/text"
+        android:text="Make Series1" />
+
+    <Button
+        android:id="@+id/btnSeries2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/dtw"
+        android:text="Make Series 2" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/btnSeries2"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/dtw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnStart"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_alignLeft="@+id/textView"
+        android:text="DTW it" />
+
+    <Button
+        android:id="@+id/btnCircle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Circle" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text"
+        android:layout_alignLeft="@+id/btnCircle"
+        android:layout_marginBottom="36dp"
+        android:text="STOP!" />
+
+    <TextView
+        android:id="@+id/CircleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dtw"
+        android:layout_marginBottom="23dp"
+        android:layout_toRightOf="@+id/btnSeries"
+        android:text="Triangle" />
+
+    <Button
+        android:id="@+id/btnClearSeries"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSeries2"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btnTriangle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCircle"
+        android:layout_alignBottom="@+id/btnCircle"
+        android:layout_alignRight="@+id/CircleView"
+        android:text="Triangle" />
+
+    <Button
+        android:id="@+id/btnEight"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTriangle"
+        android:layout_alignBottom="@+id/btnTriangle"
+        android:layout_alignRight="@+id/btnStart"
+        android:text="Eight" />
+
+    <Button
+        android:id="@+id/btnSquare"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEight"
+        android:layout_alignBottom="@+id/btnEight"
+        android:layout_toLeftOf="@+id/btnEight"
+        android:text="Square" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/button1"
+        android:text="S1ToFile" />
+
+</RelativeLayout>
