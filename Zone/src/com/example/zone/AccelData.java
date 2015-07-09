@@ -20,9 +20,7 @@ public class AccelData {
 	public void setTimestamp(long timestamp) {
 		this.timestamp = timestamp;
 	}
-	public double getX() {
-		return x;
-	}
+	
 	public void setX(double x) {
 		this.x = x;
 	}
